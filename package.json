@@ -1,0 +1,37 @@
+{
+  "name": "revealjs-theme-touraine-tech",
+  "version": "1.0.0",
+  "description": "Theme reveal.js officiel pour Touraine Tech",
+  "keywords": [
+    "revealjs",
+    "reveal.js",
+    "theme",
+    "touraine-tech",
+    "conference",
+    "presentation"
+  ],
+  "author": "Touraine Tech <team@touraine.tech>",
+  "license": "MIT",
+  "homepage": "https://touraine.tech",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tourainetech/revealjs-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tourainetech/revealjs-theme/issues"
+  },
+  "main": "dist/touraine-tech.css",
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "peerDependencies": {
+    "reveal.js": ">=5.0.0"
+  },
+  "devDependencies": {
+    "reveal.js": "^5.1.0"
+  },
+  "scripts": {
+    "serve": "npx serve ."
+  }
+}

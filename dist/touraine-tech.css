@@ -1,0 +1,622 @@
+/**
+ * Touraine Tech theme for reveal.js
+ * https://touraine.tech
+ *
+ * Couleurs:
+ * - Primary: #222333 (bleu foncé)
+ * - Secondary: #6ABFAD (vert turquoise)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+:root {
+  --tnt-primary: #222333;
+  --tnt-secondary: #6ABFAD;
+  --tnt-white: #ffffff;
+  --tnt-light-gray: #f5f5f5;
+  --r-background-color: var(--tnt-primary);
+  --r-main-font: 'Noto Sans', ui-sans-serif, system-ui, sans-serif;
+  --r-main-font-size: 42px;
+  --r-main-color: var(--tnt-white);
+  --r-block-margin: 20px;
+  --r-heading-margin: 0 0 20px 0;
+  --r-heading-font: 'Noto Sans', ui-sans-serif, system-ui, sans-serif;
+  --r-heading-color: var(--tnt-white);
+  --r-heading-line-height: 1.2;
+  --r-heading-letter-spacing: normal;
+  --r-heading-text-transform: none;
+  --r-heading-text-shadow: none;
+  --r-heading-font-weight: 700;
+  --r-heading1-text-shadow: none;
+  --r-heading1-size: 2.5em;
+  --r-heading2-size: 1.8em;
+  --r-heading3-size: 1.4em;
+  --r-heading4-size: 1.2em;
+  --r-code-font: 'Fira Code', ui-monospace, monospace;
+  --r-link-color: var(--tnt-secondary);
+  --r-link-color-dark: #4a9f8d;
+  --r-link-color-hover: var(--tnt-white);
+  --r-selection-background-color: var(--tnt-secondary);
+  --r-selection-color: var(--tnt-primary);
+}
+
+.reveal-viewport {
+  background: var(--tnt-primary);
+  background-color: var(--tnt-primary);
+}
+
+.reveal {
+  font-family: var(--r-main-font);
+  font-size: var(--r-main-font-size);
+  font-weight: normal;
+  color: var(--r-main-color);
+}
+
+.reveal ::selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+  text-shadow: none;
+}
+
+.reveal ::-moz-selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+  text-shadow: none;
+}
+
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: var(--r-heading-margin);
+  color: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  font-weight: var(--r-heading-font-weight);
+  line-height: var(--r-heading-line-height);
+  letter-spacing: var(--r-heading-letter-spacing);
+  text-transform: var(--r-heading-text-transform);
+  text-shadow: var(--r-heading-text-shadow);
+  word-wrap: break-word;
+}
+
+.reveal h1 {
+  font-size: var(--r-heading1-size);
+  text-shadow: var(--r-heading1-text-shadow);
+}
+
+.reveal h2 {
+  font-size: var(--r-heading2-size);
+}
+
+.reveal h3 {
+  font-size: var(--r-heading3-size);
+}
+
+.reveal h4 {
+  font-size: var(--r-heading4-size);
+}
+
+/*********************************************
+ * OTHER TEXT
+ *********************************************/
+
+.reveal p {
+  margin: var(--r-block-margin) 0;
+  line-height: 1.5;
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: bold;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+.reveal small * {
+  vertical-align: top;
+}
+
+.reveal img {
+  margin: var(--r-block-margin) 0;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+
+.reveal a {
+  color: var(--r-link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.reveal a:hover {
+  color: var(--r-link-color-hover);
+  text-shadow: none;
+  border: none;
+}
+
+.reveal .roll span:after {
+  color: var(--tnt-white);
+  background: var(--r-link-color-dark);
+}
+
+/*********************************************
+ * FRAME HELPER (for images/videos)
+ *********************************************/
+
+.reveal .r-frame {
+  border: 4px solid var(--r-main-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.reveal a .r-frame {
+  transition: all 0.15s linear;
+}
+
+.reveal a:hover .r-frame {
+  border-color: var(--r-link-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+
+.reveal .controls {
+  color: var(--tnt-secondary);
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+
+.reveal .progress {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--tnt-secondary);
+}
+
+/*********************************************
+ * LISTS
+ *********************************************/
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+
+.reveal ol {
+  list-style-type: decimal;
+}
+
+.reveal ul {
+  list-style-type: disc;
+}
+
+.reveal ul ul {
+  list-style-type: square;
+}
+
+.reveal ul ul ul {
+  list-style-type: circle;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+.reveal li {
+  margin: 0.5em 0;
+}
+
+.reveal li::marker {
+  color: var(--tnt-secondary);
+}
+
+.reveal dt {
+  font-weight: bold;
+}
+
+.reveal dd {
+  margin-left: 40px;
+}
+
+/*********************************************
+ * BLOCKQUOTES
+ *********************************************/
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: var(--r-block-margin) auto;
+  padding: 1em;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid var(--tnt-secondary);
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+.reveal q {
+  font-style: italic;
+}
+
+/*********************************************
+ * CODE
+ *********************************************/
+
+.reveal code {
+  font-family: var(--r-code-font);
+  text-transform: none;
+  tab-size: 2;
+}
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: var(--r-block-margin) auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: var(--r-code-font);
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.reveal code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.reveal pre code {
+  display: block;
+  padding: 1em;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+/*********************************************
+ * TABLES
+ *********************************************/
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  background: var(--tnt-secondary);
+  color: var(--tnt-primary);
+  font-weight: 600;
+  padding: 0.5em 1em;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.5em 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center;
+}
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right;
+}
+
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.reveal sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.reveal sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+/*********************************************
+ * SLIDE LAYOUTS
+ *********************************************/
+
+/* Cover slide */
+.reveal section.cover {
+  text-align: center;
+}
+
+.reveal section.cover h1 {
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+
+.reveal section.cover h2,
+.reveal section.cover p {
+  color: var(--tnt-secondary);
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.reveal section.cover .logo {
+  margin-bottom: 2rem;
+}
+
+
+/* Section slide */
+.reveal section.section {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.reveal section.section h1 {
+  font-size: 3.5em;
+  z-index: 1;
+}
+
+.reveal section.section h2,
+.reveal section.section p {
+  color: var(--tnt-secondary);
+  font-size: 1.5em;
+  font-weight: 400;
+  z-index: 1;
+}
+
+/* End slide */
+.reveal section.end {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.reveal section.end h1 {
+  font-size: 3.5em;
+}
+
+.reveal section.end h2,
+.reveal section.end p {
+  color: var(--tnt-secondary);
+  font-size: 1.8em;
+}
+
+.reveal section.end .links {
+  margin-top: 2em;
+  font-size: 1.1em;
+}
+
+.reveal section.end .links a {
+  margin: 0 1em;
+}
+
+/* Two columns layout */
+.reveal section.two-cols {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  text-align: left;
+  padding: 2rem;
+}
+
+.reveal section.two-cols > .col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Default content slide with title border */
+.reveal section.default h1 {
+  padding-bottom: 0.3em;
+  border-bottom: 3px solid var(--tnt-secondary);
+  margin-bottom: 1em;
+}
+
+/*********************************************
+ * DECORATIVE TRIANGLES
+ *********************************************/
+
+.reveal section.section::before,
+.reveal section.end::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 150px 150px;
+  border-color: transparent transparent var(--tnt-secondary) transparent;
+  opacity: 0.2;
+}
+
+.reveal section.section::after,
+.reveal section.end::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 0;
+  border-color: var(--tnt-secondary) transparent transparent transparent;
+  opacity: 0.15;
+}
+
+/*********************************************
+ * LOGO COMPONENT
+ *********************************************/
+
+.tnt-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tnt-logo svg {
+  width: 100%;
+  height: auto;
+}
+
+.tnt-logo--sm {
+  width: 80px;
+}
+
+.tnt-logo--md {
+  width: 150px;
+}
+
+.tnt-logo--lg {
+  width: 250px;
+}
+
+.tnt-logo--xl {
+  width: 400px;
+}
+
+.tnt-logo .tnt-primary {
+  fill: #222333;
+}
+
+.tnt-logo .tnt-secondary {
+  fill: #6ABFAD;
+}
+
+.tnt-logo--inverted .tnt-primary {
+  fill: #ffffff;
+}
+
+/*********************************************
+ * FOOTER
+ *********************************************/
+
+.reveal .slide-footer {
+  position: fixed;
+  bottom: 1rem;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.5em;
+  opacity: 0.6;
+  z-index: 10;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.reveal .slide-footer > * {
+  pointer-events: auto;
+}
+
+.reveal .slide-footer:hover {
+  opacity: 1;
+}
+
+.reveal .slide-footer .tnt-logo {
+  width: 60px;
+}
+
+.reveal .slide-footer .speaker-handle {
+  color: var(--tnt-secondary);
+  font-size: 1.8em;
+}
+
+.reveal .slide-footer .speaker-handle a {
+  color: inherit;
+}
+
+/*********************************************
+ * PRINT STYLES
+ *********************************************/
+
+@media print {
+  .reveal .controls {
+    display: none !important;
+  }
+}
+
+/*********************************************
+ * UTILITY CLASSES
+ *********************************************/
+
+.bg-tnt-primary {
+  background-color: var(--tnt-primary);
+}
+
+.bg-tnt-secondary {
+  background-color: var(--tnt-secondary);
+}
+
+.text-tnt-primary {
+  color: var(--tnt-primary);
+}
+
+.text-tnt-secondary {
+  color: var(--tnt-secondary);
+}
+
+.text-tnt-white {
+  color: var(--tnt-white);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
