@@ -1,34 +1,34 @@
 # Changelog
 
-Toutes les évolutions notables du thème sont listées ici.
+All notable changes to this theme are documented in this file.
 
-Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et le projet respecte le [Semantic Versioning](https://semver.org/lang/fr/).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
 ## [1.1.0] - 2026-11-08
 
-### Ajouté
+### Added
 
-- Compatibilité avec reveal.js 6. Le thème fonctionne toujours avec reveal.js 5.
-- Publication automatique sur npm depuis la CI, avec attestation de provenance.
+- reveal.js 6 support. The theme still works with reveal.js 5.
+- Automatic npm publishing from CI, with provenance attestation.
 
-### Corrigé
+### Fixed
 
-- La slide `end` ne sort plus de l'écran quand elle suit une slide `section`.
-- Les titres des slides `section` passent devant les triangles décoratifs.
-- La documentation du footer : la classe `.slide-footer.light` n'existe pas et le handle s'affiche à droite du logo.
+- The `end` slide no longer overflows the screen when it follows a `section` slide.
+- Titles on `section` slides render above the decorative triangles.
+- Footer documentation: the `.slide-footer.light` class does not exist, and the handle sits to the right of the logo.
 
-### Modifié
+### Changed
 
-- L'exemple et le README chargent reveal.js 6.0.2, dont les plugins sont maintenant sous `dist/plugin/`.
-- Le handle Touraine Tech de l'exemple devient `@tourainetech`.
+- The example and README load reveal.js 6.0.2, whose plugins now live under `dist/plugin/`.
+- The Touraine Tech handle in the example is now `@tourainetech`.
 
 ## [1.0.0] - 2025-12-23
 
-### Ajouté
+### Added
 
-- Première version du thème : layouts `cover`, `section`, `default`, `end` et `two-cols`, footer avec logo et handle, logo TNT en SVG, classes utilitaires.
+- Initial release: `cover`, `section`, `default`, `end` and `two-cols` layouts, footer with logo and handle, SVG TNT logo, utility classes.
 
 [Unreleased]: https://github.com/TouraineTech/revealjs-theme/compare/v1.1.0...HEAD
 [1.1.0]: https://github.com/TouraineTech/revealjs-theme/compare/7499cb3...v1.1.0
