@@ -30,8 +30,8 @@ npm install revealjs-theme-touraine-tech
 <head>
   <meta charset="utf-8">
   <title>Ma présentation - Touraine Tech</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/revealjs-theme-touraine-tech/dist/touraine-tech.css">
 </head>
 <body>
@@ -56,7 +56,7 @@ npm install revealjs-theme-touraine-tech
       </section>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.js"></script>
   <script>Reveal.initialize();</script>
 </body>
 </html>
