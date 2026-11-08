@@ -397,12 +397,12 @@
 /* Section slide */
 .reveal section.section {
   text-align: center;
-  position: relative;
   overflow: hidden;
 }
 
 .reveal section.section h1 {
   font-size: 3.5em;
+  position: relative;
   z-index: 1;
 }
 
@@ -411,13 +411,13 @@
   color: var(--tnt-secondary);
   font-size: 1.5em;
   font-weight: 400;
+  position: relative;
   z-index: 1;
 }
 
 /* End slide */
 .reveal section.end {
   text-align: center;
-  position: relative;
   overflow: hidden;
 }
 

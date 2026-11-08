@@ -30,8 +30,8 @@ npm install revealjs-theme-touraine-tech
 <head>
   <meta charset="utf-8">
   <title>Ma présentation - Touraine Tech</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/revealjs-theme-touraine-tech/dist/touraine-tech.css">
 </head>
 <body>
@@ -56,7 +56,7 @@ npm install revealjs-theme-touraine-tech
       </section>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.js"></script>
   <script>Reveal.initialize();</script>
 </body>
 </html>
@@ -108,9 +108,9 @@ npm install revealjs-theme-touraine-tech
 </section>
 ```
 
-## Footer (Logo + Handle Twitter)
+## Footer (Logo + handle du speaker)
 
-Ajoutez un footer global avec le logo TNT et votre handle Twitter. Placez-le dans le `<div class="reveal">` mais **en dehors** des slides :
+Ajoutez un footer global avec le logo TNT et votre handle (X, Bluesky, LinkedIn…). Placez-le dans le `<div class="reveal">` mais **en dehors** des slides :
 
 ```html
 <div class="reveal">
@@ -130,9 +130,9 @@ Ajoutez un footer global avec le logo TNT et votre handle Twitter. Placez-le dan
 
 Le footer affiche :
 - **Logo TNT** en bas à gauche
-- **Handle Twitter** en bas à droite
+- **Handle du speaker** à droite du logo
 
-Le footer est visible sur toutes les slides. Utilisez `.slide-footer.light` pour les présentations avec slides claires.
+Le footer est visible sur toutes les slides.
 
 ## Couleurs
 

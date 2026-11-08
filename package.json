@@ -1,6 +1,6 @@
 {
   "name": "revealjs-theme-touraine-tech",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Theme reveal.js officiel pour Touraine Tech",
   "keywords": [
     "revealjs",
@@ -29,7 +29,7 @@
     "reveal.js": ">=5.0.0"
   },
   "devDependencies": {
-    "reveal.js": "^5.1.0"
+    "reveal.js": "^6.0.2"
   },
   "scripts": {
     "serve": "npx serve ."
