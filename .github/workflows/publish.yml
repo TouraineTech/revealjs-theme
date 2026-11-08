@@ -36,6 +36,22 @@ jobs:
             echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
 
+      # Runs before publishing so a missing changelog entry blocks the release.
+      - name: Extract release notes from the changelog
+        if: steps.check.outputs.publish == 'true'
+        env:
+          VERSION: ${{ steps.check.outputs.version }}
+        run: |
+          awk -v v="$VERSION" '
+            /^## \[/ { if (found) exit; found = index($0, "## [" v "]") == 1; next }
+            /^\[[^]]*\]: / { exit }
+            found
+          ' CHANGELOG.md > "$RUNNER_TEMP/release-notes.md"
+          if ! grep -q '[^[:space:]]' "$RUNNER_TEMP/release-notes.md"; then
+            echo "::error file=CHANGELOG.md::No entry for $VERSION in CHANGELOG.md"
+            exit 1
+          fi
+
       - name: Publish to npm
         if: steps.check.outputs.publish == 'true'
         run: npm publish
@@ -44,4 +60,4 @@ jobs:
         if: steps.check.outputs.publish == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "v${{ steps.check.outputs.version }}" --target "$GITHUB_SHA" --generate-notes
+        run: gh release create "v${{ steps.check.outputs.version }}" --target "$GITHUB_SHA" --notes-file "$RUNNER_TEMP/release-notes.md"
