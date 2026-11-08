@@ -15,10 +15,10 @@
   "homepage": "https://touraine.tech",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tourainetech/revealjs-theme.git"
+    "url": "git+https://github.com/TouraineTech/revealjs-theme.git"
   },
   "bugs": {
-    "url": "https://github.com/tourainetech/revealjs-theme/issues"
+    "url": "https://github.com/TouraineTech/revealjs-theme/issues"
   },
   "main": "dist/touraine-tech.css",
   "files": [
