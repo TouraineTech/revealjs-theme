@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Changed
+
+- The README is in English, and its CDN links pin the major version (`@1`). Its dead preview and online example links are gone.
+- GitHub release notes come from this changelog.
+
 ## [1.1.0] - 2026-11-08
 
 ### Added
