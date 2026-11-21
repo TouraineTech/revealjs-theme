@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [2.0.1] - 2026-11-21
+
+### Changed
+
+- The Touraine Tech logo is no longer under the MIT License: you may use it as it is, but not modify it. The code stays under MIT.
+
 ## [2.0.0] - 2026-11-21
 
 ### Changed
