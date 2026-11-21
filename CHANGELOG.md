@@ -43,7 +43,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - Initial release: `cover`, `section`, `default`, `end` and `two-cols` layouts, footer with logo and handle, SVG TNT logo, utility classes.
 
-[Unreleased]: https://github.com/TouraineTech/revealjs-theme/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/TouraineTech/revealjs-theme/compare/v2.0.1...HEAD
+[2.0.1]: https://github.com/TouraineTech/revealjs-theme/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/TouraineTech/revealjs-theme/compare/v1.1.0...v2.0.0
 [1.1.0]: https://github.com/TouraineTech/revealjs-theme/compare/7499cb3...v1.1.0
 [1.0.0]: https://github.com/TouraineTech/revealjs-theme/commit/7499cb3
