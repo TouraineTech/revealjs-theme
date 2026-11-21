@@ -199,4 +199,4 @@ Record every change under `[Unreleased]` in the [CHANGELOG](./CHANGELOG.md). To 
 
 ## License
 
-MIT
+The code is under the MIT License. The Touraine Tech logo is not: you may use it as it is, but not modify it. See [LICENSE](./LICENSE).
