@@ -7,7 +7,7 @@ Official [reveal.js](https://revealjs.com) theme for Touraine Tech presentations
 ### Via CDN (recommended)
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/revealjs-theme-touraine-tech@1/dist/touraine-tech.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@touraine-tech/revealjs-theme@2/dist/touraine-tech.css">
 ```
 
 The `@1` pins the major version: you get fixes and new features, never a breaking change.
@@ -15,11 +15,11 @@ The `@1` pins the major version: you get fixes and new features, never a breakin
 ### Via npm
 
 ```bash
-npm install revealjs-theme-touraine-tech
+npm install @touraine-tech/revealjs-theme
 ```
 
 ```html
-<link rel="stylesheet" href="node_modules/revealjs-theme-touraine-tech/dist/touraine-tech.css">
+<link rel="stylesheet" href="node_modules/@touraine-tech/revealjs-theme/dist/touraine-tech.css">
 ```
 
 ## Quick start
@@ -32,7 +32,7 @@ npm install revealjs-theme-touraine-tech
   <title>My talk - Touraine Tech</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/revealjs-theme-touraine-tech@1/dist/touraine-tech.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@touraine-tech/revealjs-theme@2/dist/touraine-tech.css">
 </head>
 <body>
   <div class="reveal">
